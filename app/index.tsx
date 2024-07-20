@@ -1,15 +1,28 @@
-import { Text, View } from "react-native";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Dashboard from './ui/feature/dashboard/dashboard.jsx';
 
-export default function Index() {
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <SafeAreaProvider>
+      <NavigationContainer independent = {true}>
+        <Stack.Navigator
+          initialRouteName="Dashboard"
+          screenOptions={{ headerShown: false }} // Hide headers globally
+        >
+          <Stack.Screen 
+            name="Dashboard" 
+            component={Dashboard} 
+            options={{ headerShown: true }} // Show header for the Dashboard screen only
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
-}
+};
+
+export default App;
