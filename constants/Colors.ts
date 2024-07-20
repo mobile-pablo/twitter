@@ -1,26 +1,56 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
+const  backgroundDay = "0xFFfbfcfe";
+const  primaryDay = "0xFFedeeef";
+const  secondaryDay = "0XFF5265ff";
+const  tertiaryDay = "0XFFbdbebf";
+const  alertDay = "0XFFf5c944";
+const  warningDay = "0XFF962f32";
+const  pendingDay = "0XFFf59342";
+const  successDay = "0XFF2e7545";
+const  grayDay = "0XFF4d585d";
+const  blackTextDay = "0xFF2d2d2c";
+const  textDay = "0XFF969695";
+const  alertTextDay = "0XFFb28b42";
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+const  backgroundNight = "0xFF090a0b";
+const  primaryNight = "0xFF202427";
+const  secondaryNight = "0XFF738dff";
+const  tertiaryNight = "0XFF36393c";
+const  warningNight = "0XFF852325";
+const  pendingNight = "0XFFf29339";
+const  successNight = "0XFF2e7545";
+const  grayNight = "0XFF586765";
+const  alertNight = "0XFFf4c430";
+const  blackTextNight = "0xFFFCFDFF";
+const  textNight = "0xFFfbfcfe";
+const  alertTextNight = "0XFFe5ca74"; 
 
 export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-  },
-};
+    light: {
+        background: backgroundDay,
+        primary: primaryDay,
+        secondary: secondaryDay,
+        tertiary: tertiaryDay,
+        alert: alertDay,
+        warning: warningDay,
+        pending: pendingDay,
+        success: successDay,
+        gray: grayDay,
+        blackText: blackTextDay,
+        text: textDay,
+        alertText: alertTextDay,
+    },
+    dark: {
+        background: backgroundNight,
+        primary: primaryNight,
+        secondary: secondaryNight,
+        tertiary: tertiaryNight,
+        alert: alertNight,
+        warning: warningNight,
+        pending: pendingNight,
+        success: successNight,
+        gray: grayNight,
+        blackText: blackTextNight,
+        text: textNight,
+        alertText: alertTextNight,
+    },
+    };
